@@ -12,6 +12,8 @@ export const DigitalWatch = () => {
     return sec+1;
   }
 
+  const maintainTwoDigits = time => time<10 ? '0'+time : time; 
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setSec(sec=>updateSec(sec));
@@ -23,7 +25,7 @@ export const DigitalWatch = () => {
 
   return (
     <div style={{ backgroundColor: "black", color: "gray", fontSize: "128px" }}>
-      {currentDate.getHours()}: {currentDate.getMinutes()} : {sec}
+      {maintainTwoDigits(currentDate.getHours())}: {maintainTwoDigits(currentDate.getMinutes())} : {maintainTwoDigits(sec)}
     </div>
   );
 };
