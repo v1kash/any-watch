@@ -24,7 +24,7 @@ export const DigitalWatch = () => {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "black", color: "gray", fontSize: "128px" }}>
+    <div className="digital-clock" style={{ backgroundColor: "black", color: "gray", fontSize: "128px" }}>
       {maintainTwoDigits(currentDate.getHours())}: {maintainTwoDigits(currentDate.getMinutes())} : {maintainTwoDigits(sec)}
     </div>
   );
