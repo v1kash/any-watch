@@ -1,0 +1,11 @@
+.digital{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    background-color: black;
+    color: gray;
+    font-size: 200px;
+}

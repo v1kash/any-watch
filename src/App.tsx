@@ -1,11 +1,12 @@
 
-import { DigitalWatch } from './lib/digital_watch';
+import { DigitalWatch } from './lib/digital_watch/digital';
+import { AnalogWatch } from './lib/analog_watch/analog';
 
 function App() {
   return (
     <div className="App">
-      this is my app
-      <DigitalWatch></DigitalWatch>
+      {/* <DigitalWatch></DigitalWatch> */}
+      <AnalogWatch></AnalogWatch>
     </div>
     
   );
